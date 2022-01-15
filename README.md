@@ -1,2 +1,3 @@
-# mpu9250_i2c
-MPU9250 configuration and test over IIC
+1.0.0 (2022.01.14)
+---------------------
+Initial version, reading and calibration.

@@ -1,0 +1,6 @@
+[submodule "uart"]
+	path = uart
+	url = git@github.com:kzsolt3141/uart.git
+[submodule "twi"]
+	path = twi
+	url = git@github.com:kzsolt3141/twi.git
