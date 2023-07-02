@@ -372,7 +372,6 @@ typedef struct MPU9250_data_t {
     int16_t tmp;
     int16_t gyro[3];
     int16_t mag[3];
-    uint8_t mag_status;
 }MPU9250_data;
 
 typedef uint8_t (*TWI_write_reg_cb_t)(uint8_t slave_addr, uint8_t reg_addr, uint8_t data);
