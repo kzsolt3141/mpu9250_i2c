@@ -102,10 +102,10 @@ int main(void) {
 
     while(1) {
         MPU9250_get_data(&mpu_data);
-        // printf("%05d\n", mpu_data.tmp);
+        printf("%05d\n", mpu_data.tmp);
         printf("%05d, %05d, %05d\n", mpu_data.acc[0], mpu_data.acc[1], mpu_data.acc[2]);
-        // printf("%05d, %05d, %05d\n", mpu_data.gyro[0], mpu_data.gyro[1], mpu_data.gyro[2]);
-        // printf("%05d, %05d, %05d\n", mpu_data.mag[0] - (min_mag[0] + max_mag[0]) / 2, mpu_data.mag[1] -  (min_mag[1] + max_mag[1]) / 2, mpu_data.mag[2] - (min_mag[2] + max_mag[2]) / 2);
+        printf("%05d, %05d, %05d\n", mpu_data.gyro[0], mpu_data.gyro[1], mpu_data.gyro[2]);
+        printf("%05d, %05d, %05d\n", mpu_data.mag[0] - (min_mag[0] + max_mag[0]) / 2, mpu_data.mag[1] -  (min_mag[1] + max_mag[1]) / 2, mpu_data.mag[2] - (min_mag[2] + max_mag[2]) / 2);
 
         _delay_ms(100);
     }
